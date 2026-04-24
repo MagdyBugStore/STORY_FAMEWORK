@@ -16,14 +16,12 @@ import {
 } from "./screens/mobile/M_HardScreens";
 
 export default function App() {
-  const userScreens = 2;
-
   return (
     <BoardLayout>
       <BoardGroup
         title="القيم الإسلامية"
-        count={userScreens}
-        subtitle={`${userScreens} Screens · Desktop + Mobile`}
+        count={2}
+        subtitle="2 Screens · Desktop + Mobile"
       >
         <BoardItem
           id="W01"
@@ -37,7 +35,7 @@ export default function App() {
         <BoardItem
           id="W02"
           name="شاشة الفيديو — كظم الغيظ"
-          url="islamic-values.com/topics/kadhm-alghaydh"
+          url="islamic-values.com/topics/kadhm"
           mobile={<M02_VideoScreen />}
         >
           <W02_VideoScreen />
